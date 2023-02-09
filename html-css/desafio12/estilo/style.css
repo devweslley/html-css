@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root {
+    --cordel: #ffefb0;
+    --fundo: #ffefb0;
+}
+
+@font-face {
+    font-family: 'Cordel';
+    src: url('../fontecordel/Cordel\ Encarnado.otf');
+}
+
+@font-face {
+    font-family: 'Creativo';
+    src: url('../fontecordel/Creativo\ Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.5em;
+    
+}
+
+header {
+    background-color: #0D0C0C;
+    color: var(--cordel);
+    text-align: center;
+    display: block;
+}
+
+header > h1 {
+    font-family: 'Cordel';
+    padding-top: 50px;
+    font-size: 2em;
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: .8em;
+}
+
+header a, footer a {
+    color: var(--fundo);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: var(--fundo);
+    color: #0D0C0C
+}
+
+section.imagem {
+    background-color: #0D0C0C;
+    color: var(--fundo);   
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356); 
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: #000000bb;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.webp');
+    background-position: left center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: var(--fundo);
+    padding: 10px;
+    font-size: 0.7em;
+}
+
+main {
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--fundo);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+main p {
+    font-family: 'Creativo';
+}
