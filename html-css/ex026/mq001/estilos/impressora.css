@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Estilo para Impressoras */
+
+* {
+    margin: 5px;
+    padding: 5px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site noticias/news';
+    text-align: left;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+article {
+    width: 100%;
+}
