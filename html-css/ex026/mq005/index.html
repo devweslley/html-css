@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Mobile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons md-48" onclick="clickmenu()">menu</span>
+        <menu id="items">
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Consultas de mídia, Media Queries</h2>
+            <p>
+                As consultas de mídia são um recurso do CSS 3 que permite a 
+                adaptação do conteúdo a diferentes condições, como a resolução 
+                da tela (por exemplo, tamanho da tela do celular e do desktop). 
+                Tornou-se um padrão recomendado pelo W3C em junho de 2012, [1] e 
+                é uma tecnologia fundamental para web design responsivo (RWD).
+            </p>
+            <h3>História</h3>
+            <p>
+                As consultas de mídia foram esboçadas pela primeira vez na proposta 
+                inicial de CSS de Håkon Wium Lie em 1994, [2] mas não se tornaram parte 
+                do CSS 1 . A Recomendação HTML4 de 1997 mostra um exemplo de como 
+                consultas de mídia podem ser adicionadas no futuro. [3] Em 2000, 
+                o W3C começou a trabalhar em media queries e também em outro 
+                esquema para suportar vários dispositivos: CC/PP . 
+                Os dois abordam o mesmo problema, mas o CC/PP é centrado no servidor, 
+                enquanto as consultas de mídia são centradas no navegador. [4] 
+                O primeiro rascunho de trabalho público para consultas de mídia 
+                foi publicado em 2001, [5] e a especificação tornou-se uma 
+                recomendação do W3C em 2012, depois que os navegadores adicionaram
+                suporte.
+            </p>
+            <h3>Uso</h3>
+            <p>
+                Uma consulta de mídia consiste em um tipo de mídia e uma ou mais 
+                expressões, envolvendo recursos de mídia , que resolvem como verdadeiro 
+                ou falso. O resultado da consulta é verdadeiro se o tipo de mídia 
+                especificado na consulta de mídia corresponder ao tipo de dispositivo 
+                no qual o documento está sendo exibido e todas as expressões na consulta 
+                de mídia forem verdadeiras. Quando uma consulta de mídia é verdadeira, 
+                a folha de estilo ou as regras de estilo correspondentes são aplicadas, 
+                seguindo as regras normais em cascata. [6] [7] Consultas de mídia usam 
+                o CSS "at-rule". @media
+            </p>
+
+            <p class="code">
+                <strong>@ tela de mídia e ( modo de exibição : tela cheia ) {</strong><br>     
+                    /* O código aqui se aplica apenas a telas em tela cheia */<br>
+                  <strong>}</strong>
+            </p>
+            <p class="code">
+                <strong>@ mídia tudo e ( orientação : paisagem ) {</strong><br>     
+                    /* O código aqui se aplica apenas na orientação paisagem */<br>
+                  <strong>}</strong>
+            </p>
+            <p class="code">
+                <strong>@ tela de mídia e ( min-device-width : 500px ) {     </strong><br>
+                    /* O código aqui se aplica apenas a telas com largura igual ou superior a 500 pixels */<br>
+                  <strong>}</strong>
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickmenu () {
+          if (items.style.display == 'block') {
+            items.style.display = 'none'
+          } else {
+            items.style.display = 'block'
+          }
+        }
+    </script>
+</body>
+</html>
