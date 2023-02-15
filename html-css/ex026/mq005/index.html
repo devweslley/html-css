@@ -7,8 +7,9 @@
     <title>Menu Mobile</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudaTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-icons md-48" onclick="clickmenu()">menu</span>
@@ -77,6 +78,14 @@
         </article>
     </main>
     <script>
+        function mudaTamanho() {
+          if (window.innerWidth >= 768){
+            items.style.display = 'block'
+          } else {
+            items.style.display = 'none'
+          }  
+        }
+
         function clickmenu () {
           if (items.style.display == 'block') {
             items.style.display = 'none'
