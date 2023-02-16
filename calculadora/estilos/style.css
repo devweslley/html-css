@@ -14,27 +14,29 @@ h1 {
 
 .fundo{
     background-image: linear-gradient(45deg, #d44762, #e9555b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
+    width: 100vw;
 }
 
 .calculadora {
-    position: absolute;
     background-color: #091921;
-    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
+    height: 80vh;
+    width: 90vw;
+}
+
+table {
+    margin-top: 90px;
 }
 
 .botao {
-    width: 50px;
-    height: 50px;
-    margin: 2px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
     font-size: 25px;
     cursor: pointer;
     background-color: #0c2833;
@@ -43,9 +45,10 @@ h1 {
 }
 
 .botao1 {
-    width: 50px;
-    height: 50px;
-    margin: 2px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 5px;
     font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
@@ -55,9 +58,10 @@ h1 {
 }
 
 .botao2 {
-    width: 50px;
-    height: 50px;
-    margin: 2px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 5px;
     font-size: 25px;
     cursor: pointer;
     background-color: #ffbf3e;
@@ -65,23 +69,19 @@ h1 {
     color: white;
 }
 
-.botao:hover, .botao1:hover, .botao2:hover {
-    background-color: #e9555c;
-    color: white;
-}
-
 #resultado {
+    display: block;
     background-color: #091921;
     color: white;
-    height: 50px;
-    width: 207px;
-    margin: 5px;
-    padding: 5px;
+    height: 40px;
+    width: 240px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 4px;
-    font-size: 2em;
-    text-align: right;
+    font-size: 3em;
+    text-align: left;
 }
 
 button {
-    border-radius: 25px;
+    border-radius: 40px;
 }
