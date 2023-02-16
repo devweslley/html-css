@@ -14,20 +14,14 @@ h1 {
 
 .fundo{
     background-image: linear-gradient(45deg, #d44762, #e9555b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 100vw;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
 }
 
 .calculadora {
-    display: block;
-    position: absolute;
     background-color: #091921;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 5px;
     padding: 15px;
 }
@@ -75,13 +69,13 @@ h1 {
     display: block;
     background-color: #091921;
     color: white;
-    height: 45px;
-    width: 202px;
+    height: 40px;
+    width: 240px;
     margin: 5px;
     padding: 30px;
     border-radius: 4px;
     font-size: 3em;
-    text-align: right;
+    text-align: left;
 }
 
 button {
