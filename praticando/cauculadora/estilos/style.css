@@ -18,18 +18,25 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 
 .calculadora {
     background-color: #091921;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
+    height: 80vh;
+    width: 90vw;
+}
+
+table {
+    margin-top: 90px;
 }
 
 .botao {
-    width: 70px;
-    height: 70px;
-    margin: 2px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
     font-size: 25px;
     cursor: pointer;
     background-color: #0c2833;
@@ -38,9 +45,10 @@ h1 {
 }
 
 .botao1 {
-    width: 70px;
-    height: 70px;
-    margin: 2px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 5px;
     font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
@@ -50,18 +58,14 @@ h1 {
 }
 
 .botao2 {
-    width: 70px;
-    height: 70px;
-    margin: 2px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 5px;
     font-size: 25px;
     cursor: pointer;
     background-color: #ffbf3e;
     border: none;
-    color: white;
-}
-
-.botao:hover, .botao1:hover, .botao2:hover {
-    background-color: #e9555c;
     color: white;
 }
 
@@ -71,13 +75,13 @@ h1 {
     color: white;
     height: 40px;
     width: 240px;
-    margin: 5px;
-    padding: 30px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 4px;
     font-size: 3em;
     text-align: left;
 }
 
 button {
-    border-radius: 35px;
+    border-radius: 40px;
 }
