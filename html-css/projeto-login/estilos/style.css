@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/*
+Plaeta de cores
+Branco #ffffff
+Preto #000200
+Lilas #652ec7
+verde #90fd80 (talvez)
+
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #d04155;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    background-color: #e0e0e0;
+    position: absolute;
+    overflow: hidden;
+    width: 450px;
+    height: 650px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.265);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #e0e0e0 url(../imagens/login-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > div.campo {
+    display: block;
+    background-color: #000200;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 10px 15%;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #ffffff;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    transform: translateY(-42px);
+    margin-left: 45px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 300px;
+    height: 50px;
+    background-color: #000200;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 15%;
+}
+
+form > input[type=submit]:hover {
+    background-color: white;
+    color: #000200;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 300px;
+    height: 50px;
+    padding-top: 15px;
+    margin: 10px 15%;
+    /*background-color: black;*/
+    border: 1.8px solid #000200;
+    color: #000200;
+    border-radius: 25px;
+    text-decoration: none;    
+}
+
+form > a.botao:hover {
+    background-color: #000200;
+    color: white;
+}
+
+
+
+/*
+body {
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+input#ilogin, input#isenha {
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    border: none;
+}
+
+input#entrar, input#recuperar {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    background-color: #000200;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}*/
